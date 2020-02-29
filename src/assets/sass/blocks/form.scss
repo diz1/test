@@ -1,0 +1,62 @@
+.form {
+  &__item {
+    max-width: 235px;
+    width: 100%;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    max-width: 235px;
+    width: 235px;
+    height: 24px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-bottom: 1px solid $brd-inp;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: $lbl;
+    &-gender {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-right: 19px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__gender {
+    display: flex;
+    align-items: center;
+    &-male{
+      width: auto;
+      margin-right: 6px;
+      margin-bottom: 0;
+    }
+    &-female {
+      width: auto;
+      margin-right: 6px;
+      margin-bottom: 0;
+    }
+    &-text {
+      //display: block;
+    }
+  }
+
+}

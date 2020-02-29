@@ -1,0 +1,64 @@
+.signup {
+  &__text {
+    width: 485px;
+    margin: 3.852rem auto 0;
+  }
+
+  &__form {
+    width: 485px;
+    margin: 2rem auto 9.8rem;
+  }
+
+  &__footer {
+    width: 485px;
+    margin: auto
+  }
+
+  &__title {
+    position: relative;
+
+    width: 137px;
+    margin: 0 auto 0;
+    background-color: $prim;
+  }
+
+  &__inner {
+    width: 528px;
+    //padding: 3.852rem 2.2rem  3.248rem 2.08rem;
+
+    font-size: 1.2rem;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.title {
+  &__text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+
+    color: #ffffff;
+
+    font-family: "PT Sans", sans-serif, Serif;
+    font-size: 4.9rem;
+    transform: rotate(-90deg);
+  }
+}
+
+.text {
+  &__title {
+    font-size: 2.2rem;
+    letter-spacing: -0.049rem;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
