@@ -1,10 +1,14 @@
 html {
   font-family: "Work Sans", sans-serif, Serif;
   font-size: 10px;
+
   color: $main-txt;
+  background-color: $bg;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 100px auto;
   max-width: 665px;
+
+  background-color: #ffffff;
 }

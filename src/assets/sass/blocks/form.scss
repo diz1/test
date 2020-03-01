@@ -4,29 +4,61 @@
     width: 100%;
   }
 
+  &-birth__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-select__wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 0.98rem;
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: .7rem;
+      right: 0;
+      z-index: 1;
+      border-right: .5px solid black;
+      border-bottom: .5px solid black;
+
+      transform: rotateZ(45deg);
+
+      width: 6px;
+      height: 6px;
+    }
+  }
+
   &__input {
     box-sizing: border-box;
-    display: block;
+
     max-width: 235px;
-    width: 235px;
+    width: 100%;
     height: 24px;
     margin-bottom: 5px;
 
     border: none;
     border-bottom: 1px solid $brd-inp;
+
+    font-size: 1.4rem;
+    color: $main-txt;
+    &:focus {
+      border-bottom-color: $prim;
+    }
   }
 
   &__label {
     font-size: 1.2rem;
     font-weight: 100;
     color: $lbl;
+
+    user-select: none;
+
     &-gender {
       font-size: 1.4rem;
       font-weight: 400;
-      margin-right: 19px;
-      &:last-child {
-        margin-right: 0;
-      }
+      color: $main-txt;
     }
   }
 
@@ -36,6 +68,7 @@
     align-items: center;
 
     margin-bottom: 16px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -44,19 +77,83 @@
   &__gender {
     display: flex;
     align-items: center;
-    &-male{
-      width: auto;
+
+    &-male {
+      position: relative;
+
+      width: 10px;
+
+      border: none;
+
       margin-right: 6px;
       margin-bottom: 0;
+
+
+      appearance: none;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 0;
+
+        width: 12px;
+        height: 12px;
+
+        background-image: url(../img/checkbox/checkbox-off.svg);
+      }
+      
+      &:checked:after {
+        background-image: url(../img/checkbox/checkbox-on.svg);
+      }
     }
+
     &-female {
       width: auto;
       margin-right: 6px;
       margin-bottom: 0;
-    }
-    &-text {
-      //display: block;
+      margin-left: 10px;
+      border: none;
+
+      appearance: none;
+
+      position: relative;
+
+      width: 10px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 0;
+
+        width: 12px;
+        height: 12px;
+
+        background-image: url(../img/checkbox/checkbox-off.svg);
+      }
+
+      &:checked:after {
+        background-image: url(../img/checkbox/checkbox-on.svg);
+      }
     }
   }
 
+  &-radio {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+
+      margin-right: 19px;
+
+      &:focus {
+        border: 1px solid $prim;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
+
+

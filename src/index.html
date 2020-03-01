@@ -39,12 +39,14 @@ title: Test for belps.by
 					<div class="form__row">
 						<div class="form__item">
 							<label class="form__label" for="Nationality">Nationality</label>
-							<select class="form__input" name="Nationality" id="Nationality">
-								<option value="1">American</option>
-								<option value="2">Russian</option>
-								<option value="3">French</option>
-								<option value="4">German</option>
-							</select>
+							<div class="form-select__wrapper">
+								<select class="form__input removeAppearance" name="Nationality" id="Nationality">
+									<option value="1">American</option>
+									<option value="2">Russian</option>
+									<option value="3">French</option>
+									<option value="4">German</option>
+								</select>
+							</div>
 						</div>
 						<div class="form__item">
 							<label for="email" class="form__label">Email</label>
@@ -53,16 +55,90 @@ title: Test for belps.by
 					</div>
 					<div class="form__row">
 						<div class="form__item">
-							<label for="birth-date" class="form__label">Date of Birth</label>
-							<input type="date" class="form__birth-date signup__birth-date form__input" id="birth-date">
+							<label class="form__label">Date of Birth</label>
+							<div class="form-birth__wrapper">
+								<div class="form-select__wrapper">
+									<select class="form__input form__input_date-of-birth removeAppearance" name="birth_day" id="birth_day">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+								<div class="form-select__wrapper">
+									<select class="form__input form__input_date-of-birth removeAppearance" name="birth_month" id="birth_month">
+										<option value="1">January</option>
+										<option value="2">February</option>
+										<option value="3">March</option>
+										<option value="4">April</option>
+										<option value="5">May</option>
+										<option value="6">June</option>
+										<option value="7">July</option>
+										<option value="8">August</option>
+										<option value="9">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+								</div>
+								<div class="form-select__wrapper">
+									<select class="form__input form__input_date-of-birth removeAppearance" name="birth_year" id="birth_year">
+										<option value="1">2002</option>
+										<option value="2">2001</option>
+										<option value="3">2000</option>
+										<option value="4">1999</option>
+										<option value="5">1998</option>
+										<option value="6">1997</option>
+										<option value="7">1996</option>
+										<option value="8">1995</option>
+										<option value="9">1994</option>
+										<option value="10">1993</option>
+										<option value="11">1992</option>
+										<option value="12">1991</option>
+										<option value="12">1990</option>
+									</select>
+								</div>
+							</div>
+<!--							<input type="date" class="form__birth-date signup__birth-date form__input" id="birth-date">-->
 						</div>
 						<div class="form__item">
 							<label for="gender" class="form__label">Gender</label>
 							<div class="form__gender" id="gender">
-								<input type="radio" class="form__gender-male signup__gender-male form__input" name="gender" id="gender-male">
-								<label class="form__label form__label-gender" for="gender-male">Male</label>
-								<input type="radio" class="form__gender-female signup__gender-female form__input" name="gender" id="gender-female">
-								<label class="form__label form__label-gender" for="gender-female">Female</label>
+								<div class="form-radio__wrapper">
+									<input checked type="radio" class="form__gender-male signup__gender-male form__input" name="gender" id="gender-male">
+									<label class="form__label form__label-gender" for="gender-male">Male</label>
+								</div>
+								<div class="form-radio__wrapper">
+									<input type="radio" class="form__gender-female signup__gender-female form__input" name="gender" id="gender-female">
+									<label class="form__label form__label-gender" for="gender-female">Female</label>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -99,6 +175,34 @@ title: Test for belps.by
 		<!-- /. signup main__inner -->
 	</div>
 	<!-- /.container -->
+
+<!--	<div id="content">-->
+<!--		<div class="select-wrapper">-->
+<!--			<select>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--			</select>-->
+<!--			<div class="select-arrow-1"></div>-->
+<!--		</div>-->
+<!--		<div class="select-wrapper">-->
+<!--			<div class="select-arrow-2"></div>-->
+<!--			<select>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--			</select>-->
+<!--		</div>-->
+<!--		<div class="select-wrapper">-->
+<!--			<div class="select-arrow-3"></div>-->
+<!--			<div class="select-arrow-3"></div>-->
+<!--			<select>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--				<option>Test</option>-->
+<!--			</select>-->
+<!--		</div>-->
+<!--	</div>-->
 </main>
 <!-- /.main -->
 <script src="./assets/js/script.min.js"></script>

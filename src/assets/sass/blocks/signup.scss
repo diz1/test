@@ -32,21 +32,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 3.248rem;
   }
 }
 
 .title {
-  &__text {
+  position: relative;
+
+  &__wrapper {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
+    right: -30%;
+    bottom: 17%;
+
+    transform: rotate(-90deg);
+  }
+  &__text {
+    width: 160px;
 
     color: #ffffff;
 
     font-family: "PT Sans", sans-serif, Serif;
     font-size: 4.9rem;
-    transform: rotate(-90deg);
   }
 }
 
